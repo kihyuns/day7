@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">      <!-- 버튼을 누르면 JSON파일 만들어 내는 예-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn">CLICK</button>
+
+<script>
+
+    document.querySelector("#btn").addEventListener("click",function(){
+
+        console.log("click")
+
+        fetch("http://<!--ip-->:5555/WebstormProjects/map/1team.json")
+
+    }, false)
+
+</script>
+
+</body>
+</html>
